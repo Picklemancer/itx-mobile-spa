@@ -1,0 +1,20 @@
+{
+    "app.home.title": "Home",
+    "error.content": "Some problem with the request, please reload the page or try it again later, sorry for the inconvenience",
+    "loading.content": "Loading...",
+    "products.input.placeholder": "Iconia B1-721",
+    "product.description.general.title": "General",
+    "product.description.body.title": "Body",
+    "product.description.display.title": "Display",
+    "product.description.platform.title": "Platform",
+    "product.description.memory.title": "Memory",
+    "product.description.sound.title": "Sound",
+    "product.description.sound.speaker": "Speaker {{value}}",
+    "product.description.sound.jack": "Audio Jack {{value}}",
+    "product.add-cart.color.title": "Color",
+    "product.add-cart.storage.title": "Storage",
+    "product.add-cart.button.content": "Add to cart",
+    "product.add-cart.toast.success": "Item added to the cart",
+    "product.add-cart.toast.error.color": "Color field missing!",
+    "product.add-cart.toast.error.storage": "Storage field missing!"
+}
