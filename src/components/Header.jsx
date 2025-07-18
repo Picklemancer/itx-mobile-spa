@@ -1,3 +1,4 @@
+import { t } from "~/utils/i18n";
 import { useShoppingCart } from "~/contexts/ShoppingCartContext";
 import Button from "~/components/Button";
 import ShoppingCart from "~/components/icons/ShoppingCart";
@@ -18,7 +19,7 @@ const Header = (props) => {
               variant="link"
               onClick={props.onClickHome}
             >
-              Home
+              {t("app.home.title")}
             </Button>
           </li>
 
