@@ -158,8 +158,8 @@ const Product = ({ id }) => {
               <p>{t("product.description.general.title")}</p>
 
               <ul>
-                <li>Brand: {product.state.brand}</li>
-                <li>Model: {product.state.model}</li>
+                <li>{t("product.description.brand", [product.state.brand])}</li>
+                <li>{t("product.description.model", [product.state.model])}</li>
               </ul>
 
             </li>
@@ -168,9 +168,9 @@ const Product = ({ id }) => {
               <p>{t("product.description.body.title")}</p>
 
               <ul>
-                <li>Dimentions: {product.state.dimentions}</li>
-                <li>Weight: {product.state.weight} g</li>
-                <li>SIM: {product.state.sim}</li>
+                <li>{t("product.description.dimensions", [product.state.dimentions])}</li>
+                <li>{t("product.description.weight", [product.state.weight])}</li>
+                <li>{t("product.description.sim", [product.state.sim])}</li>
               </ul>
 
             </li>
@@ -179,9 +179,9 @@ const Product = ({ id }) => {
               <p>{t("product.description.display.title")}</p>
 
               <ul>
-                <li>Type: {product.state.displayType}</li>
-                <li>Size: {product.state.displaySize}</li>
-                <li>Resolution: {product.state.displayResolution}</li>
+                <li>{t("product.description.display-type", [product.state.displayType])}</li>
+                <li>{t("product.description.display-size", [product.state.displaySize])}</li>
+                <li>{t("product.description.display-resolution", [product.state.displayResolution])}</li>
               </ul>
 
             </li>
@@ -190,10 +190,10 @@ const Product = ({ id }) => {
               <p>{t("product.description.platform.title")}</p>
 
               <ul>
-                <li>OS: {product.state.os}</li>
-                <li>Chipset: {product.state.chipset}</li>
-                <li>CPU: {product.state.cpu}</li>
-                <li>GPU: {product.state.gpu}</li>
+                <li>{t("product.description.os", [product.state.os])}</li>
+                <li>{t("product.description.chipset", [product.state.chipset])}</li>
+                <li>{t("product.description.cpu", [product.state.cpu])}</li>
+                <li>{t("product.description.gpu", [product.state.gpu])}</li>
               </ul>
 
             </li>
@@ -202,9 +202,9 @@ const Product = ({ id }) => {
               <p>{t("product.description.memory.title")}</p>
 
               <ul>
-                <li>RAM: {product.state.ram}</li>
-                <li>Internal Memory: {product.state.internalMemory}</li>
-                <li>External Memory: {product.state.externalMemory}</li>
+                <li>{t("product.description.ram", [product.state.ram])}</li>
+                <li>{t("product.description.internal-memory", [product.state.internalMemory])}</li>
+                <li>{t("product.description.external-memory", [product.state.externalMemory])}</li>
               </ul>
 
             </li>
@@ -215,17 +215,11 @@ const Product = ({ id }) => {
               <ul>
 
                 <li>
-                  {t(
-                    "product.description.sound.speaker",
-                    { value: product.state.speaker },
-                  )}
+                  {t("product.description.speaker", [product.state.speaker])}
                 </li>
 
                 <li>
-                  {t(
-                    "product.description.sound.jack",
-                    { value: product.state.audioJack },
-                  )}
+                  {t("product.description.audio-jack", [product.state.audioJack])}
                 </li>
 
               </ul>
