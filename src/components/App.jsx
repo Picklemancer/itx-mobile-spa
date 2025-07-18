@@ -143,7 +143,7 @@ const Product = ({ id }) => {
   );
 
   return (
-    <div className="m-4 flex flex-col md:flex-row items-center justify-around">
+    <div className="m-4 flex flex-col md:flex-row items-center justify-around gap-4">
 
       <section>
         <Image className="w-64" src={product.state.imgUrl} />
