@@ -1,0 +1,3 @@
+- Mejorar el estado de carga mientras se fetchean los datos
+- Permitir que las cartas puedan tener foco para navegar a traves de ellas con el tabulador 
+- Mejorar el algoritmo de la busqueda, ahora mismo es un poco basico, deberia trocear el texto que se introduce en el input y buscar las coincidencias por cada termino
