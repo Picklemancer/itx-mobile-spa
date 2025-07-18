@@ -94,21 +94,21 @@ const Product = ({ id }) => {
   const [storageCode, setStorageCode] = useState(0);
 
   const product = useAsync(
-    () => cacheWrapper(
-      async () => {
-        const product = await getProduct(id);
+    async () => {
+      const product = await cacheWrapper(
+        () => getProduct(id),
+        PRODUCT_STORAGE_KEY.replace("{{id}}", id),
+        1_000 * 60 * 60,
+      );
 
-        const colors = product.options.colors;
-        if (colors.length === 1) setColorCode(colors.at(0).code);
+      const colors = product.options.colors;
+      if (colors.length === 1) setColorCode(colors.at(0).code);
 
-        const storages = product.options.storages;
-        if (storages.length === 1) setStorageCode(storages.at(0).code);
+      const storages = product.options.storages;
+      if (storages.length === 1) setStorageCode(storages.at(0).code);
 
-        return product;
-      },
-      PRODUCT_STORAGE_KEY.replace("{{id}}", id),
-      1_000 * 60 * 60,
-    ),
+      return product;
+    },
     { initialState: null },
   );
 
